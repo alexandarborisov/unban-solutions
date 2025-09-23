@@ -68,23 +68,6 @@ export default function Services() {
       ]
     },
     {
-      icon: FileText,
-      title: 'Add-On Services',
-      description: 'Additional support for complex cases',
-      services: [
-        {
-          name: 'Extra Light Case',
-          description: 'Additional light case handling',
-          price: '€170-€250'
-        },
-        {
-          name: 'Extra Heavy Case',
-          description: 'Complex case resolution',
-          price: '€330-€1000'
-        }
-      ]
-    },
-    {
       icon: GraduationCap,
       title: 'Education & Training',
       description: 'Prevention programs and educational resources',
