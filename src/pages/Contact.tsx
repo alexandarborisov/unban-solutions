@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Paperclip } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
+    caseType: 'light',
+    profileType: 'Micro Influencer',
     socialAccounts: '',
     caseDescription: '',
-    caseType: 'light'
+    attachments: null as File | null,
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -16,13 +18,29 @@ export default function Contact() {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0] || null;
+    const maxFileSize = 8 * 1024 * 1024; // 8 MB
+
+    if (file && file.size > maxFileSize) {
+      alert("File size exceeds 8MB limit. Please choose a smaller file.");
+      e.target.value = ''; // Reset the file input
+      setFormData({ ...formData, attachments: null });
+      return;
+    }
+    
+    setFormData({
+      ...formData,
+      attachments: file,
     });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend
     console.log('Form submitted:', formData);
     setIsSubmitted(true);
     
@@ -33,9 +51,11 @@ export default function Contact() {
         name: '',
         email: '',
         phone: '',
+        caseType: 'light',
+        profileType: 'Micro Influencer',
         socialAccounts: '',
         caseDescription: '',
-        caseType: 'light'
+        attachments: null,
       });
     }, 3000);
   };
@@ -130,7 +150,7 @@ export default function Contact() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                        Phone Number
+                        Phone Number *
                       </label>
                       <input
                         type="tel"
@@ -162,8 +182,29 @@ export default function Contact() {
                   </div>
 
                   <div>
+                    <label htmlFor="profileType" className="block text-sm font-medium text-gray-700 mb-2">
+                      Profile Type *
+                    </label>
+                    <select
+                      id="profileType"
+                      name="profileType"
+                      required
+                      value={formData.profileType}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    >
+                      <option value="Micro Influencer">Micro Influencer</option>
+                      <option value="Macro Influencer">Macro Influencer</option>
+                      <option value="Public Figure">Public Figure</option>
+                      <option value="Individual">Individual</option>
+                      <option value="Agency">Agency</option>
+                      <option value="Entreprise">Entreprise</option>
+                    </select>
+                  </div>
+
+                  <div>
                     <label htmlFor="socialAccounts" className="block text-sm font-medium text-gray-700 mb-2">
-                      Links to Social Accounts
+                      Links to Social Accounts *
                     </label>
                     <input
                       type="text"
@@ -190,6 +231,28 @@ export default function Contact() {
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                       placeholder="Describe your issue in detail. Include what happened, when it occurred, and any screenshots or documentation you have..."
                     />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="attachments" className="block text-sm font-medium text-gray-700 mb-2">
+                      Attach Files (Max 8MB, .png, .jpg, .avif, .jpeg)
+                    </label>
+                    <div className="flex items-center space-x-2">
+                      <input
+                        type="file"
+                        id="attachments"
+                        name="attachments"
+                        accept=".png,.jpg,.jpeg,.avif"
+                        onChange={handleFileChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      />
+                      <Paperclip className="h-5 w-5 text-gray-500" />
+                    </div>
+                    {formData.attachments && (
+                      <p className="mt-2 text-sm text-gray-500">
+                        Selected file: {formData.attachments.name}
+                      </p>
+                    )}
                   </div>
 
                   <button
