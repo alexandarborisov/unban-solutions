@@ -10,10 +10,12 @@ import SubscriptionCreators from './pages/SubscriptionCreators';
 import SubscriptionPublicFigures from './pages/SubscriptionPublicFigures';
 import SubscriptionIndividuals from './pages/SubscriptionIndividuals';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Navbar />
         <Routes>
