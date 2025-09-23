@@ -27,6 +27,12 @@ export default function Home() {
       title: 'Public Figures',
       description: 'Politicians and celebrities',
       color: 'text-orange-600'
+    },
+    {
+      icon: User,
+      title: 'Individuals',
+      description: 'General users facing bans or restrictions',
+      color: 'text-blue-600'
     }
   ];
 

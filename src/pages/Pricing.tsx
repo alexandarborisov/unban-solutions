@@ -189,6 +189,18 @@ export default function Pricing() {
               >
                 View Individual Plans
               </Link>
+              <Link
+                to="/contact"
+                className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+              >
+                Agency Plans
+              </Link>
+              <Link
+                to="/contact"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+              >
+                Enterprise Plans
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
