@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 export default function Pricing() {
   const caseHandling = [
     {
-      name: 'Light Case',
-      price: '€170-€250',
+      name: 'Individual',
+      price: '€100',
       description: 'Perfect for simple issues',
       features: [
         'Post removal assistance',
@@ -17,8 +17,8 @@ export default function Pricing() {
       ]
     },
     {
-      name: 'Heavy Case',
-      price: '€300-€1000',
+      name: 'Creator - Micro',
+      price: '€170',
       description: 'For complex account issues',
       features: [
         'Account deletion recovery',
@@ -31,8 +31,8 @@ export default function Pricing() {
       popular: true
     },
     {
-      name: 'Light Case',
-      price: '€170-€250',
+      name: 'Creator - Macro/Public Figure',
+      price: '€250',
       description: 'Perfect for simple issues',
       features: [
         'Post removal assistance',
@@ -121,7 +121,7 @@ export default function Pricing() {
 
         {/* Case Handling Pricing */}
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Case Handling</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Light Case</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {caseHandling.map((plan, index) => (
               <div
