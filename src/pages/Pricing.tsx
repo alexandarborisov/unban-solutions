@@ -155,14 +155,6 @@ export default function Pricing() {
                   <div className="text-4xl font-bold text-blue-600 mb-2">{plan.price}</div>
                   <p className="text-gray-600">{plan.description}</p>
                 </div>
-                <ul className="space-y-4">
-                  {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center">
-                      <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
@@ -193,14 +185,6 @@ export default function Pricing() {
                   <div className="text-4xl font-bold text-blue-600 mb-2">{plan.price}</div>
                   <p className="text-gray-600">{plan.description}</p>
                 </div>
-                <ul className="space-y-4">
-                  {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center">
-                      <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>
