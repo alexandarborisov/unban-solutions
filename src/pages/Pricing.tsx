@@ -7,7 +7,7 @@ export default function Pricing() {
     {
       name: 'Individual',
       price: '€100',
-      description: 'Perfect for simple issues',
+      description: 'Suitable for average users and small accounts',
       features: [
         'Post removal assistance',
         'Shadowban investigation',
@@ -19,7 +19,7 @@ export default function Pricing() {
     {
       name: 'Creator - Micro',
       price: '€170',
-      description: 'For complex account issues',
+      description: 'For influencers below 10k followers',
       features: [
         'Account deletion recovery',
         'Ad account suspension',
@@ -31,9 +31,9 @@ export default function Pricing() {
       popular: true
     },
     {
-      name: 'Creator - Macro/Public Figure',
+      name: 'Creator - Macro',
       price: '€250',
-      description: 'Perfect for simple issues',
+      description: 'For influencers above 10k followers',
       features: [
         'Post removal assistance',
         'Shadowban investigation',
