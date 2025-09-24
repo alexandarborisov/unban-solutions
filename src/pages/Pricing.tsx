@@ -144,6 +144,44 @@ export default function Pricing() {
           </div>
         </section>
 
+                {/* Case Handling Pricing */}
+                <section className="mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Case Handling</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {caseHandling.map((plan, index) => (
+              <div
+                key={index}
+                className={`bg-white rounded-2xl shadow-xl p-8 relative ${
+                  plan.popular ? 'ring-2 ring-blue-500' : ''
+                }`}
+              >
+                {plan.popular && (
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center">
+                      <Star className="h-4 w-4 mr-1" />
+                      Popular
+                    </span>
+                  </div>
+                )}
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
+                  <div className="text-4xl font-bold text-blue-600 mb-2">{plan.price}</div>
+                  <p className="text-gray-600">{plan.description}</p>
+                </div>
+                <ul className="space-y-4">
+                  {plan.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center">
+                      <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+
         {/* Audits & Consulting */}
         <section className="mb-20">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Audits & Consulting</h2>
