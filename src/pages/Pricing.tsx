@@ -29,6 +29,18 @@ export default function Pricing() {
         'Dedicated case manager'
       ],
       popular: true
+    },
+    {
+      name: 'Light Case',
+      price: '€170-€250',
+      description: 'Perfect for simple issues',
+      features: [
+        'Post removal assistance',
+        'Shadowban investigation',
+        'IP claims handling',
+        'Basic account recovery',
+        '48-hour response time'
+      ]
     }
   ];
 
@@ -110,7 +122,7 @@ export default function Pricing() {
         {/* Case Handling Pricing */}
         <section className="mb-20">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Case Handling</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {caseHandling.map((plan, index) => (
               <div
                 key={index}
@@ -147,7 +159,7 @@ export default function Pricing() {
                 {/* Case Handling Pricing */}
                 <section className="mb-20">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Case Handling</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {caseHandling.map((plan, index) => (
               <div
                 key={index}
