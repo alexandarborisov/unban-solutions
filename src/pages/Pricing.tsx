@@ -70,7 +70,7 @@ export default function Pricing() {
     {
       name: 'Preventive Content Audit',
       price: '€100',
-      features: ['Content safety review', 'Policy compliance check', 'Prevention strategies']
+      features: ['20 posts', 'Content safety review', 'Policy compliance check', 'Prevention strategies']
     },
     {
       name: 'Digital Prevention Product',
@@ -171,7 +171,7 @@ export default function Pricing() {
 
                 {/* Case Handling Pricing */}
                   <section className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Light Case</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Heavy Case</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {caseHandling.map((plan, index) => (
               <div
