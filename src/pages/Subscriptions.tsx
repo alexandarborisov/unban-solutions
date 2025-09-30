@@ -85,7 +85,6 @@ export default function Subscriptions() {
       subtitle: '≤3,000 followers',
       monthly: 80,
       plans: [
-        { duration: '1 month', price: 80, savings: 0 },
         { duration: '3 months', price: 340, savings: 240 - 340 },
         { duration: '6 months', price: 480, savings: 480 - 480 },
         { duration: '12 months', price: 720, savings: 960 - 720 }
@@ -103,7 +102,6 @@ export default function Subscriptions() {
       subtitle: '≥3,000 followers',
       monthly: 150,
       plans: [
-        { duration: '1 month', price: 150, savings: 0 },
         { duration: '3 months', price: 450, savings: 450 - 450 },
         { duration: '6 months', price: 720, savings: 900 - 720 },
         { duration: '12 months', price: 1200, savings: 1800 - 1200 }
@@ -213,22 +211,6 @@ export default function Subscriptions() {
           </div>
         </section>
 
-        {/* Add-On Services */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Add-On Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Extra Light Case</h3>
-              <div className="text-3xl font-bold text-blue-600 mb-4">€170-€250</div>
-              <p className="text-gray-600">Additional light case handling for ongoing issues</p>
-            </div>
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Extra Heavy Case</h3>
-              <div className="text-3xl font-bold text-purple-600 mb-4">€330-€1000</div>
-              <p className="text-gray-600">Complex case resolution depending on complexity</p>
-            </div>
-          </div>
-        </section>
 
         {/* Legal Services */}
         <section className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-12 text-white text-center">
