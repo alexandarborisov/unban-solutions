@@ -59,12 +59,12 @@ export default function Pricing() {
   const auditsConsulting = [
     {
       name: 'Campaign Audit (10 posts)',
-      price: '€150',
+      price: '€100',
       features: ['10 posts analysis', 'Risk assessment', 'Recommendations report']
     },
     {
       name: 'Campaign Audit (20 posts)',
-      price: '€200',
+      price: '€150',
       features: ['20 posts analysis', 'Detailed risk assessment', 'Comprehensive recommendations']
     },
     {
@@ -74,7 +74,7 @@ export default function Pricing() {
     },
     {
       name: 'Digital Prevention Product',
-      price: '€250',
+      price: '€80',
       features: ['Complete protection toolkit', 'Templates and checklists', 'Ongoing support']
     }
   ];
@@ -170,10 +170,9 @@ export default function Pricing() {
         </section>
 
                 {/* Case Handling Pricing */}
-                <section className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Heavy Case
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                  <section className="mb-20">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Light Case</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {caseHandling.map((plan, index) => (
               <div
                 key={index}
@@ -189,16 +188,24 @@ export default function Pricing() {
                     </span>
                   </div>
                 )}
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-2">{plan.price}</div>
-                  <p className="text-gray-600">{plan.description}</p>
-                </div>
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
+                <div className="text-4xl font-bold text-blue-600 mb-2">{plan.price}</div>
+                
+                {/* Add mb-4 (margin-bottom) to the paragraph */}
+                <p className="text-gray-600 mb-4">{plan.description}</p> 
+                
+                <Link
+                  to="/contact/"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+                >
+                  Contact us
+                </Link>
+              </div>
               </div>
             ))}
           </div>
         </section>
-
 
         {/* Audits & Consulting */}
         <section className="mb-20">
