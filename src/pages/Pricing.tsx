@@ -150,17 +150,20 @@ export default function Pricing() {
                     </span>
                   </div>
                 )}
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
-                  <div className="text-4xl font-bold text-blue-600 mb-2">{plan.price}</div>
-                  <p className="text-gray-600">{plan.description}</p>
-                  <Link
-                     to="/contact/"
-                     className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
-                    >
-                    Contact us
-                  </Link>
-                </div>
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
+                <div className="text-4xl font-bold text-blue-600 mb-2">{plan.price}</div>
+                
+                {/* Add mb-4 (margin-bottom) to the paragraph */}
+                <p className="text-gray-600 mb-4">{plan.description}</p> 
+                
+                <Link
+                  to="/contact/"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+                >
+                  Contact us
+                </Link>
+              </div>
               </div>
             ))}
           </div>
