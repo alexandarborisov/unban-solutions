@@ -9,7 +9,6 @@ export default function SubscriptionIndividuals() {
     description: 'Essential protection for non-creator individuals',
     monthly: 50,
     plans: [
-      { duration: '1 month', price: 50, savings: 0 },
       { duration: '3 months', price: 150, savings: 0 },
       { duration: '6 months', price: 240, savings: 60 },
       { duration: '12 months', price: 420, savings: 180 }

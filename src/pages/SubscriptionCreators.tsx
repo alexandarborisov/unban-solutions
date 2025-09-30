@@ -10,7 +10,6 @@ export default function SubscriptionCreators() {
       description: 'Perfect for growing creators',
       monthly: 80,
       plans: [
-        { duration: '1 month', price: 80, savings: 0 },
         { duration: '3 months', price: 240, savings: 0 },
         { duration: '6 months', price: 480, savings: 0 },
         { duration: '12 months', price: 720, savings: 240 }
@@ -35,7 +34,6 @@ export default function SubscriptionCreators() {
       description: 'For established creators',
       monthly: 150,
       plans: [
-        { duration: '1 month', price: 150, savings: 0 },
         { duration: '3 months', price: 450, savings: 0 },
         { duration: '6 months', price: 720, savings: 180 },
         { duration: '12 months', price: 1200, savings: 600 }

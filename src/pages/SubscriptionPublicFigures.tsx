@@ -10,7 +10,6 @@ export default function SubscriptionPublicFigures() {
       description: 'Specialized protection for political content',
       monthly: 200,
       plans: [
-        { duration: '1 month', price: 200, savings: 0 },
         { duration: '3 months', price: 600, savings: 0 },
         { duration: '6 months', price: 960, savings: 240 },
         { duration: '12 months', price: 1680, savings: 720 }
@@ -38,7 +37,6 @@ export default function SubscriptionPublicFigures() {
       description: 'Comprehensive protection for high-profile individuals',
       monthly: 250,
       plans: [
-        { duration: '1 month', price: 250, savings: 0 },
         { duration: '3 months', price: 750, savings: 0 },
         { duration: '6 months', price: 1200, savings: 300 },
         { duration: '12 months', price: 2100, savings: 900 }

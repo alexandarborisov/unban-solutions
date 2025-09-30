@@ -161,54 +161,7 @@ export default function Subscriptions() {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {subscriptions.map((plan, index) => (
-              <div
-                key={index}
-                className={`bg-white rounded-2xl shadow-xl overflow-hidden ${
-                  plan.popular ? 'ring-2 ring-blue-500' : ''
-                }`}
-              >
-                {plan.popular && (
-                  <div className="bg-blue-500 text-white text-center py-2">
-                    <span className="font-semibold flex items-center justify-center">
-                      <Star className="h-4 w-4 mr-1" />
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-                <div className="p-8">
-                  <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-1">{plan.name}</h3>
-                    <p className="text-gray-600 mb-4">{plan.subtitle}</p>
-                  </div>
 
-                  <div className="grid grid-cols-2 gap-4 mb-8">
-                    {plan.plans.map((pricing, pricingIndex) => (
-                      <div key={pricingIndex} className="text-center p-4 border rounded-lg">
-                        <div className="text-lg font-semibold text-gray-900">{pricing.duration}</div>
-                        <div className="text-2xl font-bold text-blue-600">€{pricing.price}</div>
-                        {pricing.savings > 0 && (
-                          <div className="text-sm text-green-600 font-medium">
-                            Save €{Math.abs(pricing.savings)}
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-
-                  <ul className="space-y-3">
-                    {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center">
-                        <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
         </section>
 
 
