@@ -2,7 +2,7 @@ import React from 'react';
 import { Check, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-export default function Pricing() {
+export default function Subscriptions() {
   const caseHandling = [
     {
       name: 'Individual',
