@@ -130,38 +130,13 @@ export default function Services() {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Small Accounts</h3>
               <p className="text-gray-600 mb-6">≤3,000 followers</p>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span>3 months</span>
-                  <span className="text-2xl font-bold text-blue-600">€340</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>6 months</span>
-                  <span className="text-2xl font-bold text-blue-600">€480</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>12 months</span>
-                  <span className="text-2xl font-bold text-blue-600">€720</span>
-                </div>
-              </div>
+
+
             </div>
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Large Accounts</h3>
               <p className="text-gray-600 mb-6">≥3,000 followers</p>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span>3 months</span>
-                  <span className="text-2xl font-bold text-purple-600">€450</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>6 months</span>
-                  <span className="text-2xl font-bold text-purple-600">€720</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>12 months</span>
-                  <span className="text-2xl font-bold text-purple-600">€1200</span>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
