@@ -130,6 +130,12 @@ export default function Subscriptions() {
             <p className="text-gray-600 mb-6">Choose the subscription plan that fits your profile and needs</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
+                to="/subscription/individuals"
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+              >
+                View Individual Plans
+              </Link>
+              <Link
                 to="/subscription/creators"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
               >
@@ -140,12 +146,6 @@ export default function Subscriptions() {
                 className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
               >
                 View Public Figure Plans
-              </Link>
-              <Link
-                to="/subscription/individuals"
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
-              >
-                View Individual Plans
               </Link>
               <Link
                 to="/contact"

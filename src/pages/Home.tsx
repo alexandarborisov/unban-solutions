@@ -6,9 +6,21 @@ export default function Home() {
   const whoWeHelp = [
     {
       icon: User,
+      title: 'Individuals',
+      description: 'General users facing bans or restrictions',
+      color: 'text-blue-600'
+    },
+    {
+      icon: User,
       title: 'Creators',
       description: 'Micro (3k-10k) and Macro (10k+) influencers',
       color: 'text-blue-600'
+    },
+    {
+      icon: Crown,
+      title: 'Public Figures',
+      description: 'Politicians and celebrities',
+      color: 'text-orange-600'
     },
     {
       icon: Building2,
@@ -21,19 +33,8 @@ export default function Home() {
       title: 'Enterprises',
       description: 'Large corporations and businesses',
       color: 'text-green-600'
-    },
-    {
-      icon: Crown,
-      title: 'Public Figures',
-      description: 'Politicians and celebrities',
-      color: 'text-orange-600'
-    },
-    {
-      icon: User,
-      title: 'Individuals',
-      description: 'General users facing bans or restrictions',
-      color: 'text-blue-600'
     }
+    
   ];
 
   const features = [
