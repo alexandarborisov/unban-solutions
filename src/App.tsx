@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import SubscriptionCreators from './pages/SubscriptionCreators';
 import SubscriptionPublicFigures from './pages/SubscriptionPublicFigures';
 import SubscriptionIndividuals from './pages/SubscriptionIndividuals';
+import Subscriptions from './pages/Subscriptions';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/subscriptions" element={<Subscriptions />} />
           <Route path="/process" element={<Process />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/subscription/creators" element={<SubscriptionCreators />} />
