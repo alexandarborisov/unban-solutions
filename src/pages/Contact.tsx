@@ -173,8 +173,8 @@ export default function Contact() {
                         onChange={handleInputChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                       >
-                        <option value="light">Light Case (€170-€250)</option>
-                        <option value="heavy">Heavy Case (€300-€1000)</option>
+                        <option value="light">Light Case</option>
+                        <option value="heavy">Heavy Case</option>
                         <option value="consultation">Consultation Only</option>
                         <option value="subscription">Subscription Service</option>
                       </select>

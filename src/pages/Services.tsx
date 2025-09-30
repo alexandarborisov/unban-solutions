@@ -11,12 +11,12 @@ export default function Services() {
         {
           name: 'Light Cases',
           description: 'Post removal, shadowban, IP claims',
-          price: '€170-€250'
+
         },
         {
           name: 'Heavy Cases',
           description: 'Account deletion, ad account suspension, monetization ban',
-          price: '€300-€1000'
+
         }
       ]
     },
@@ -28,65 +28,41 @@ export default function Services() {
         {
           name: 'Campaign Audit',
           description: '10-20 posts review and optimization',
-          price: '€150-€200'
+
         },
         {
           name: 'Preventive Content Audit',
           description: 'Comprehensive 20 posts analysis',
-          price: '€100'
+ 
         },
         {
           name: 'Digital Prevention Products',
           description: 'Comprehensive protection toolkit',
-          price: '€250'
+
         },
         {
           name: 'Legal Consultation',
           description: '1-hour expert consultation',
-          price: 'Contact us'
+
         },
         {
           name: 'Contract Review',
           description: 'Brand-deal contract analysis',
-          price: 'Contact us'
+
         },
         {
           name: 'Legal Opinions',
           description: 'Defamation, hate speech analysis',
-          price: 'Contact us'
+
         },
         {
           name: 'Court Representation',
           description: 'Up to 2 hearings included',
-          price: 'Contact us'
+
         },
         {
           name: 'IP Protection & Claims',
           description: 'Intellectual property services',
-          price: 'Contact us'
-        }
-      ]
-    },
-    {
-      icon: GraduationCap,
-      title: 'Education & Training',
-      description: 'Prevention programs and educational resources',
-      services: [
-        {
-          name: 'Prevention Programs',
-          description: 'Comprehensive training modules'
-        },
-        {
-          name: 'Video Series & Webinars',
-          description: 'Interactive learning content'
-        },
-        {
-          name: 'Case Studies & Guides',
-          description: 'Real-world examples and solutions'
-        },
-        {
-          name: 'Checklists & Templates',
-          description: 'Publishing, fact-checking, ad approval tools'
         }
       ]
     }
@@ -156,10 +132,6 @@ export default function Services() {
               <p className="text-gray-600 mb-6">≤3,000 followers</p>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span>Monthly</span>
-                  <span className="text-2xl font-bold text-blue-600">€80</span>
-                </div>
-                <div className="flex justify-between items-center">
                   <span>3 months</span>
                   <span className="text-2xl font-bold text-blue-600">€340</span>
                 </div>
@@ -177,10 +149,6 @@ export default function Services() {
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Large Accounts</h3>
               <p className="text-gray-600 mb-6">≥3,000 followers</p>
               <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span>Monthly</span>
-                  <span className="text-2xl font-bold text-purple-600">€150</span>
-                </div>
                 <div className="flex justify-between items-center">
                   <span>3 months</span>
                   <span className="text-2xl font-bold text-purple-600">€450</span>
