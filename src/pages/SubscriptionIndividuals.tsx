@@ -9,25 +9,14 @@ export default function SubscriptionIndividuals() {
     description: 'Essential protection for non-creator individuals',
     monthly: 50,
     plans: [
-      { duration: '3 months', price: 150, savings: 0 },
-      { duration: '6 months', price: 240, savings: 60 },
-      { duration: '12 months', price: 420, savings: 180 }
+      { duration: '12 months', price: 170, savings: 180 }
     ],
     features: [
-      'Personal account protection',
-      'Privacy violation assistance',
-      'Basic content review (up to 5 posts/month)',
-      'Account recovery support',
-      'Email support',
-      'Educational resources',
-      'Community guidelines training',
-      'Monthly safety tips'
+      '20% discount on individual light and heavy cases',
     ],
     alaCarte: [
-      { service: 'Light Case', price: '€170-€250' },
-      { service: 'Account Recovery', price: '€200' },
-      { service: 'Privacy Consultation', price: '€100' },
-      { service: 'Content Audit (5 posts)', price: '€75' }
+      { service: 'Light Case', price: '€100' },
+      { service: 'Heavy Case', price: '€170' },
     ]
   };
 
