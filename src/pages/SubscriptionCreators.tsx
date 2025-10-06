@@ -56,7 +56,7 @@ export default function SubscriptionCreators() {
         { service: 'Legal Consultation', price: '€250' },
         { service: 'Brand Deal Review', price: '€300' }
       ],
-      popular: false
+      popular: true
     }
   ];
 
