@@ -10,9 +10,9 @@ export default function SubscriptionCreators() {
       description: 'Perfect for growing creators',
       monthly: 80,
       plans: [
-        { duration: '3 months', price: 240, savings: 0 },
-        { duration: '6 months', price: 420, savings: 0 },
-        { duration: '12 months', price: 720, savings: 240 }
+        { duration: '3 months', price: 240, savings: '80 per month' },
+        { duration: '6 months', price: 420, savings: '70 per month' },
+        { duration: '12 months', price: 720, savings: '60 per month' },
       ],
       features: [
         'Monthly content review (up to 10 posts)',
@@ -41,20 +41,18 @@ export default function SubscriptionCreators() {
         { duration: '12 months', price: 1200, savings: 600 }
       ],
       features: [
-        'Priority content review (up to 20 posts)',
-        'Advanced risk assessment',
-        'Personalized prevention strategies',
-        'Phone & email support',
-        'Dedicated account manager',
-        'Emergency response (24/7)',
-        'Brand deal contract review',
-        'Crisis management support'
+        '1x Campaign Audit (up to 20 posts)',
+        '1x Digital Preventive Product',
+        '3x Light Cases Resolutions (1 per month)',
+        '1x Heavy Cases per subscription period',
+        '1x Prevention Consultation',
       ],
       alaCarte: [
-        { service: 'Heavy Case', price: '€300-€1000' },
-        { service: 'Content Audit (20 posts)', price: '€200' },
-        { service: 'Legal Consultation', price: '€250' },
-        { service: 'Brand Deal Review', price: '€300' }
+        { service: 'Light Case', price: '€250' },
+        { service: 'Heavy Case', price: '€500' },
+        { service: 'Campaign Audit (up to 20 posts)', price: '€150' },
+        { service: 'Prevention Consultation', price: '€50' },
+        { service: 'Digital Preventive Product', price: '€80' },
       ],
       popular: true
     }
