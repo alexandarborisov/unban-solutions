@@ -325,7 +325,7 @@ export default function Contact() {
               </p>
               <div className="space-y-2">
                 <p className="text-green-700 font-semibold">Emergency Hotline:</p>
-                <p className="text-green-700">+1 (555) 911-HELP</p>
+                <p className="text-green-700">+359 896 649 201</p>
                 <p className="text-green-600 text-sm">Available 24/7 for urgent cases</p>
               </div>
             </div>
