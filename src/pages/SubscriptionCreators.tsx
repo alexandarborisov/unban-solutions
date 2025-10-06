@@ -26,8 +26,8 @@ export default function SubscriptionCreators() {
         { service: 'Light Case', price: '€170' },
         { service: 'Heavy Case', price: '€300' },
         { service: 'Campaign Audit (10 posts)', price: '€100' },
-        { service: 'Prevention Consultation', price: '€50' }
-        { service: 'Digital Preventive Product', price: '€80' }
+        { service: 'Prevention Consultation', price: '€50' },
+        { service: 'Digital Preventive Product', price: '€80' },
       ]
     },
     {
