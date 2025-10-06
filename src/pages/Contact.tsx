@@ -70,20 +70,20 @@ export default function Contact() {
     {
       icon: Phone,
       title: 'Call Us',
-      detail: '+1 (555) 123-4567',
-      description: 'Mon-Fri 9AM-6PM EST'
+      detail: '+359 896 649 201',
+      description: 'Mon-Sun 9AM-6PM'
     },
     {
       icon: MapPin,
-      title: 'Visit Us',
-      detail: 'New York, NY',
+      title: 'Address',
+      detail: 'Sofia, Bulgaria, Shipchenski Prohod 18, Office 308',
       description: 'Available for consultations'
     },
     {
       icon: Clock,
       title: 'Emergency Support',
       detail: '24/7 Available',
-      description: 'For urgent cases'
+      description: 'For urgent cases extra fee may apply'
     }
   ];
 

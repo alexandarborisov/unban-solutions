@@ -54,11 +54,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center text-gray-400">
                 <Phone className="h-5 w-5 mr-3" />
-                <span>+1 (555) 123-4567</span>
+                <span>+359 896 649 201</span>
               </div>
               <div className="flex items-center text-gray-400">
                 <MapPin className="h-5 w-5 mr-3" />
-                <span>New York, NY</span>
+                <span>Sofia, Bulgaria, Shipchenski Prohod 18, Office 308</span>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@ export default function Footer() {
         {/* Emergency Notice */}
         <div className="mt-8 bg-red-900 bg-opacity-50 border border-red-700 rounded-lg p-4 text-center">
           <p className="text-red-200 font-semibold">
-            🚨 Emergency Cases: Call +1 (555) 911-HELP for immediate assistance
+            🚨 Emergency Cases: Call +359 896 649 201 for immediate assistance
           </p>
         </div>
       </div>
