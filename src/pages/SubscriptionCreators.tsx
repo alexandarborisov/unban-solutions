@@ -11,21 +11,23 @@ export default function SubscriptionCreators() {
       monthly: 80,
       plans: [
         { duration: '3 months', price: 240, savings: 0 },
-        { duration: '6 months', price: 480, savings: 0 },
+        { duration: '6 months', price: 420, savings: 0 },
         { duration: '12 months', price: 720, savings: 240 }
       ],
       features: [
         'Monthly content review (up to 10 posts)',
-        'Basic risk assessment',
-        'Prevention guidelines',
-        'Email support',
-        'Resource library access',
-        'Community guidelines training'
+        '1x Campaign audit per subscription period',
+        '1x Digital Prevention Product',
+        '3 x Light Cases Resolution (1 per month)',
+        '1 x Heavy Case per subscription period',
+        '1 x Prevention Consultation',
       ],
       alaCarte: [
-        { service: 'Light Case', price: '€170-€250' },
-        { service: 'Content Audit (10 posts)', price: '€150' },
-        { service: 'Prevention Consultation', price: '€100' }
+        { service: 'Light Case', price: '€170' },
+        { service: 'Heavy Case', price: '€300' },
+        { service: 'Campaign Audit (10 posts)', price: '€100' },
+        { service: 'Prevention Consultation', price: '€50' }
+        { service: 'Digital Preventive Product', price: '€80' }
       ]
     },
     {
@@ -54,7 +56,7 @@ export default function SubscriptionCreators() {
         { service: 'Legal Consultation', price: '€250' },
         { service: 'Brand Deal Review', price: '€300' }
       ],
-      popular: true
+      popular: false
     }
   ];
 
@@ -145,7 +147,7 @@ export default function SubscriptionCreators() {
                   </div>
                   <div className="mt-4 p-3 bg-green-50 rounded-lg">
                     <p className="text-sm text-green-800 font-medium">
-                      Save up to 60% with annual subscription vs. individual services
+                      Save up to 70% with annual subscription vs. individual services
                     </p>
                   </div>
                 </div>

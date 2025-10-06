@@ -105,7 +105,7 @@ export default function SubscriptionIndividuals() {
 
             {/* A la Carte Comparison */}
             <div className="border-t pt-8 mb-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">vs. Individual Service Pricing</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-6">Individual Service Pricing</h3>
               <div className="bg-gray-50 rounded-lg p-6">
                 <div className="space-y-3">
                   {plan.alaCarte.map((service, index) => (
