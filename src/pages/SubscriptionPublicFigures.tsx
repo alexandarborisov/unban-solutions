@@ -10,25 +10,23 @@ export default function SubscriptionPublicFigures() {
       description: 'Specialized protection for political content',
       monthly: 200,
       plans: [
-        { duration: '3 months', price: 600, savings: 0 },
-        { duration: '6 months', price: 960, savings: 240 },
-        { duration: '12 months', price: 1680, savings: 720 }
+        { duration: '3 months', price: 450, savings: 0 },
+        { duration: '6 months', price: 720, savings: 240 },
+        { duration: '12 months', price: 1200, savings: 720 }
       ],
       features: [
-        'Political content compliance review',
-        'Campaign material audit',
-        'Crisis communication support',
-        'Legal consultation for political ads',
-        'Defamation monitoring',
-        'Emergency response (24/7)',
-        'Media relations support',
-        'Regulatory compliance guidance'
+        'Preventive Content Audit (up to 20 posts per subscription period)',
+        'Digital Prevention Product',
+        '1 x Heavy Case per subscription period',
+        '3 x Light Cases ( 1 per month )',
+        '3 x Preventive Consultations ( 1 per month )',
       ],
       alaCarte: [
-        { service: 'Political Ad Review', price: '€300' },
-        { service: 'Crisis Management', price: '€500-€1000' },
-        { service: 'Legal Consultation', price: '€250/hour' },
-        { service: 'Defamation Case', price: '€1000+' }
+        { service: 'Preventive Content Audit (up to 20 posts)', price: '€100' },
+        { service: 'Digital Preventive Product', price: '€80' },
+        { service: 'Preventive Consultation', price: '€50' },
+        { service: 'Light Case', price: '€250' },
+        { service: 'Heavy Case', price: '€500' },
       ]
     },
     {
@@ -37,26 +35,25 @@ export default function SubscriptionPublicFigures() {
       description: 'Comprehensive protection for high-profile individuals',
       monthly: 250,
       plans: [
-        { duration: '3 months', price: 750, savings: 0 },
-        { duration: '6 months', price: 1200, savings: 300 },
-        { duration: '12 months', price: 2100, savings: 900 }
+        { duration: '3 months', price: 450, savings: 0 },
+        { duration: '6 months', price: 720, savings: 300 },
+        { duration: '12 months', price: 1200, savings: 900 }
       ],
       features: [
-        'Personal brand protection',
-        'Reputation monitoring',
-        'Privacy violation response',
-        'Image rights protection',
-        'Social media crisis management',
-        'Legal representation',
-        'PR coordination support',
-        'Family account protection',
-        'VIP support line'
+        'Preventive Content Audit (up to 20 posts per subscription period)',
+        'Campaign Audit (up to 10 posts per subscription period)',
+        'Digital Prevention Product',
+        '1 x Heavy Case per subscription period',
+        '3 x Light Cases ( 1 per month )',
+        '3 x Preventive Consultations ( 1 per month )',
       ],
       alaCarte: [
-        { service: 'Reputation Crisis', price: '€1000-€2000' },
-        { service: 'Privacy Violation', price: '€500-€1500' },
-        { service: 'Image Rights Case', price: '€800-€2000' },
-        { service: 'Legal Representation', price: '€300/hour' }
+        { service: 'Preventive Content Audit (up to 20 posts)', price: '€100' },
+        { service: 'Campaign Audit (up to 10 posts)', price: '€100' },
+        { service: 'Digital Preventive Product', price: '€80' },
+        { service: 'Preventive Consultation', price: '€50' },
+        { service: 'Light Case', price: '€250' },
+        { service: 'Heavy Case', price: '€500' },
       ],
       popular: true
     }
@@ -138,7 +135,7 @@ export default function SubscriptionPublicFigures() {
 
                 {/* A la Carte Comparison */}
                 <div className="border-t pt-6">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-4">vs. A la Carte Pricing</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">vs. Single Service Pricing</h4>
                   <div className="space-y-2">
                     {plan.alaCarte.map((service, serviceIndex) => (
                       <div key={serviceIndex} className="flex justify-between items-center text-sm">
