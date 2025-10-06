@@ -10,9 +10,9 @@ export default function SubscriptionCreators() {
       description: 'Perfect for growing creators',
       monthly: 80,
       plans: [
-        { duration: '3 months', price: 240, savings: '80 per month' },
-        { duration: '6 months', price: 420, savings: '70 per month' },
-        { duration: '12 months', price: 720, savings: '60 per month' },
+        { duration: '3 months', price: 240, savings: 80  },
+        { duration: '6 months', price: 420, savings: 70 },
+        { duration: '12 months', price: 720, savings: 60 },
       ],
       features: [
         'Monthly content review (up to 10 posts)',
@@ -134,7 +134,7 @@ export default function SubscriptionCreators() {
 
                 {/* A la Carte Comparison */}
                 <div className="border-t pt-6">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-4">vs. A la Carte Pricing</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">vs. Single Service Pricing</h4>
                   <div className="space-y-2">
                     {plan.alaCarte.map((service, serviceIndex) => (
                       <div key={serviceIndex} className="flex justify-between items-center text-sm">
